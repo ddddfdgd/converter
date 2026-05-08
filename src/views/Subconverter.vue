@@ -1014,41 +1014,25 @@ export default {
       this.$message.success("已复制");
     },
     goToProject() {
-      window.open(project);
+      location.reload();
     },
     gotoTgChannel() {
-      window.open(tgBotLink);
+      location.reload();
     },
     gotoBiliBili() {
-      window.open(bzlink);
+      location.reload();
     },
     gotoYouTuBe() {
-      window.open(yglink);
+      location.reload();
     },
     toolsDown() {
       window.open(downld);
     },
     gotoBasicVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
-        type: "warning",
-        confirmButtonText: '确定',
-        customClass: 'msgbox',
-        showClose: false,
-      })
-          .then(() => {
-            window.open(basicVideo);
-          });
+      location.reload();
     },
     gotoAdvancedVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
-        type: "warning",
-        confirmButtonText: '确定',
-        customClass: 'msgbox',
-        showClose: false,
-      })
-          .then(() => {
-            window.open(advancedVideo);
-          });
+      location.reload();
     },
     makeUrl() {
       if (this.form.sourceSubUrl === "" || this.form.clientType === "") {
